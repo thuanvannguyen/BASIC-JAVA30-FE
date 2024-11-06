@@ -1,0 +1,15 @@
+h4 {
+  color: green;
+}
+
+/* h5 {
+  color: orange!important;
+} */
+h5, h6 {
+  color: red;
+  font-size: 30px;
+}
+/* h6 {
+  color: red;
+  font-size: 30px;
+} */

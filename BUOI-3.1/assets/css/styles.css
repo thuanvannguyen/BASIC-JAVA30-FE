@@ -1,0 +1,72 @@
+/* Reset Browser */
+* {
+  padding: 0; /* k/c phan tu */
+  margin: 0; /* k/c phan tu */
+  box-sizing: border-box;
+}
+
+/* Selector: Class CSS */
+.title_1 {
+  color: red;
+}
+.title_2 {
+  color: orange;
+}
+
+/* Selector: ID CSS  */
+#para_1 {
+  color: green;
+}
+#para_2 {
+  color: violet;
+}
+
+/*  Selector: Cha - Con  */
+
+div h3 {
+  color: blue;
+}
+
+h3 {
+  color: pink;
+}
+
+
+/* Selector: Link */
+a:visited {
+  color: red;
+}
+a:link {
+  color: orange;
+}
+
+h4 {
+  color: red;
+  font-size: 25px;
+  font-style: italic;
+  background-color: aqua;
+}
+
+
+/* Margin/Padding */
+.item-1 {
+  width: 200px;
+  height: 200px;
+  background-color: brown;
+  margin-top: 50px;
+  padding-top: 30px;
+
+  border: 5px solid blue;
+  /* border-radius: 10px; */
+  border-radius: 50%;
+}
+
+
+
+
+.item-2 {
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  display: none;
+}
