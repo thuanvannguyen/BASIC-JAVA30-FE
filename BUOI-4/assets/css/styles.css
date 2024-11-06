@@ -1,0 +1,78 @@
+/* Reset Browser */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Thanh phan cha */
+.container {
+  width: 80%;
+  height: 800px;
+  background-color: pink;
+
+  /* Can giua man hinh  */
+  margin: auto;
+
+  /* Bat buoc */
+  display: flex;
+
+  /* -> flex-direction: Xd huong PT con */
+  /* flex-direction: column-reverse; */
+
+  /* -> flex-wrap: Can chinh kich thuoc PT */
+  /* flex-wrap: wrap-reverse; */
+
+  /* 
+    -> justify-content: Can chinh Vi Tri PT theo Hang (Row)
+    -> Quan trong
+   */
+  /* justify-content: center; */
+
+
+  /* 
+    -> align-items: Can chinh Vi Tri PT theo cot (coloumn) 
+    -> Quan Trong   
+  */
+  /* align-items: center; */
+
+  /* align-content: Can chinh Vi PT theo hang (Nhieu hang) */
+  /* flex-wrap: wrap;
+  align-content: space-evenly; */
+
+}
+
+
+/* Thanh phan con */
+.box-1 {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  /* order: 2; */
+  /* flex-grow: 1; */
+}
+
+.box-2 {
+  width: 150px;
+  height: 150px;
+  background-color: blue;
+  /* order: 4; */
+  /* flex-grow: 1; */
+}
+
+.box-3 {
+  width: 150px;
+  height: 150px;
+  background-color: orange;
+  /* order: 3; */
+  /* flex-grow: 1; */
+  flex-shrink: 0;
+}
+
+.box-4 {
+  width: 150px;
+  height: 150px;
+  background-color: violet;
+  /* order: 1; */
+  /* flex-grow: 1; */
+}
