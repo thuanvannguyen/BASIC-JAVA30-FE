@@ -1,0 +1,45 @@
+/* Reset Browser */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+}
+
+/* CSS Global */
+.container {
+  max-width: 1260px;
+  margin: auto;
+}
+
+/* Header Top./Start */
+.header-top {
+  width: 100%;
+  background-color: #f65d4e;
+
+  height: 66px;
+}
+
+.header-top-wrap {
+  display: flex;
+}
+
+.logo {
+  width: 25%;
+  height: 66px;
+  background-color: black;
+}
+.search-main {
+  width: 55%;
+  height: 66px;
+  background-color: green;
+}
+.icon-user {
+  width: calc(100% - (25% + 55%));
+  height: 66px;
+  background-color: yellow;
+}

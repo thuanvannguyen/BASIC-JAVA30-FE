@@ -1,0 +1,103 @@
+/* Reset Browser */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* postion: static */
+.box-1 {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  position: static;
+  /* Default browser*/
+}
+
+/* postion: relative */
+.box-2 {
+  width: 200px;
+  height: 200px;
+  background-color: green;
+
+  /* -> all 4 VT */
+  /* margin: 50px; */
+
+  /* margin-top: 50px; */
+
+   /* top right bottom left */
+  /* margin: 50px 0 0 0; */
+
+  /* 
+   -> Doi xung bang nhau 
+   top && bottom: 50px;
+   right && left: 0px;
+  */
+  /* margin: 50px 0;  */
+
+  position: relative;
+  /* left: 50px; */
+}
+
+
+/* postion: absolute */
+.wrap {
+  width: 500px;
+  height: 400px;
+  background-color: violet;
+
+  position: relative; /* Mat troi */
+}
+.box-3 {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+
+  position: absolute; /* Trai dat */
+  top: 100px;
+  z-index: 10;
+}
+.box-4 {
+  width: 200px;
+  height: 200px;
+  background-color: black;
+  position: absolute;
+  top: 150px;
+  z-index: 1;
+}
+
+.content {
+  width: 100%;
+  height: 500px;
+  background-color: pink;
+}
+
+/* Postion: fixed */
+.box-5 {
+  width: 100px;
+  height: 100px;
+  background-color: brown;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  z-index: 99999;
+}
+
+
+/* Menu */
+.top-bar {
+  width: 100%;
+  height: 30px;
+  background-color: chartreuse;
+}
+.main-menu {
+  width: 100%;
+  height: 80px;
+  background-color: black;
+  /* position: fixed;
+  top: 30px; */
+  position: sticky;
+  top: 0;
+  z-index: 999999999;
+}
