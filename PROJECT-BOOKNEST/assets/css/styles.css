@@ -31,15 +31,133 @@ body {
 .logo {
   width: 25%;
   height: 66px;
-  background-color: black;
+  display: flex;
+  align-items: center;
 }
+
+.logo a {
+  text-decoration: none;
+  /* Bo mac dinh gach chan the a */
+}
+
+.logo a h1 {
+  color: #fff;
+  font-size: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  /* Viet hoa chu */
+}
+
 .search-main {
-  width: 55%;
+  width: 45%;
   height: 66px;
-  background-color: green;
+  display: flex;
+  align-items: center;
 }
+
+.search-main input {
+  height: 46px;
+  border: none;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  width: 100%;
+  padding: 0 20px;
+  outline: none;
+  /* remove border input when click */
+}
+
+/* .search-main input:focus {
+  outline: none;
+} */
+.search-main button {
+  height: 46px;
+  border: none;
+  width: 60px;
+  background-color: #cf3424;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.search-main button i {
+  color: #fff;
+  font-size: 16px;
+}
+
+.info-user {
+  width: calc(100% - (25% + 45%));
+  height: 66px;
+  display: flex;
+  justify-content: space-between;
+  /* background-color: violet; */
+}
+
+.info-user .book-map {
+  height: 66px;
+  display: flex;
+  align-items: center;
+  /* can giua theo column */
+  justify-content: center;
+  /* can giua theo row*/
+  text-decoration: none;
+  width: 60%;
+}
+
+.info-user .book-map i {
+  color: #fff;
+  margin-right: 8px;
+}
+
+.info-user .book-map p {
+  font-size: 14px;
+  color: #fff;
+  text-decoration: underline;
+}
+
 .icon-user {
-  width: calc(100% - (25% + 55%));
+  display: flex;
   height: 66px;
-  background-color: yellow;
+  align-items: center;
 }
+
+.icon-user li {
+  list-style: none;
+  /* remove dau cham mac dinh ul li */
+  margin-left: 15px;
+  padding-left: 15px;
+  border-left: 1px solid #fff;
+  position: relative;
+}
+
+.icon-user li:first-child {
+  /* :first-child ->  chon PT con dau tien*/
+  border-left: none;
+}
+
+.icon-user li i {
+  color: #fff;
+  font-size: 18px;
+}
+
+.icon-user li span {
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 13px;
+  position: absolute;
+  top: -12px;
+  right: -12px;
+}
+
+/* Menu Main */
+.menu-main {
+  width: 100%;
+  height: 64px;
+  background-color: pink;
+}
+
+
+/* Banner */
