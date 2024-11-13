@@ -16,6 +16,40 @@ body {
   margin: auto;
 }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.column {
+  /* width: calc(100% / 5); */
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.column-1 {
+  width: 100%;
+}
+.column-2 {
+  width: calc(100% / 2)
+}
+.column-3 {
+  width: calc(100% / 3)
+}
+.column-4 {
+  width: calc(100% / 4)
+}
+.column-5 {
+  width: calc(100% / 5)
+}
+.column-6 {
+  width: calc(100% / 6)
+}
+
+
+
+
 /* Header Top./Start */
 .header-top {
   width: 100%;
@@ -161,3 +195,40 @@ body {
 
 
 /* Banner */
+/* .owl-dots {
+  position: relative;
+  top: -50px;
+} */
+
+/* Service  */
+.service {
+  width: 100%;
+
+  /* height: 400px; */
+  background-color: pink;
+}
+
+/* .service .container {
+  height: 200px;
+  background-color: violet;
+} */
+
+.content {
+  width: 100%;
+  height: 300px;
+  background-color: blue;
+  margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+/* 
+row: Hang
+column: Cot
+*/
