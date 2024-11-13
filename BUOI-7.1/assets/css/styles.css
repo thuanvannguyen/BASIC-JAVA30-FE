@@ -1,0 +1,57 @@
+/* Reset Browser */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* transform: translate(x,y) */
+.box-1 {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  /* margin-top: 100px;
+  margin-left: 100px; */
+
+  /* transform: translate(50px, 20px); */
+  /* transform: translateX(50px); */
+}
+
+.box-2 {
+  width: 200px;
+  height: 200px;
+  margin-left: 400px;
+  background-color: orange;
+}
+
+
+/*   transform: scale(x, y); */
+.box-2:hover {
+  /* width: 400px;
+  height: 400px; */
+  transform: scale(2, 2);
+}
+
+/* transform: rotate(45deg); */
+.box-3 {
+  width: 200px;
+  height: 200px;
+  background-color: violet;
+
+  transform: rotate(45deg);
+}
+
+
+
+/* Ket hop transform && transtion */
+.box-4 {
+  width: 200px;
+  height: 200px;
+  background-color: pink;
+  margin-left: 400px;
+
+  transition: transform .1s;
+}
+.box-4:hover {
+  transform: rotate(180deg);
+}
