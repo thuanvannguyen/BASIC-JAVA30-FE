@@ -47,9 +47,6 @@ body {
   width: calc(100% / 6)
 }
 
-
-
-
 /* Header Top./Start */
 .header-top {
   width: 100%;
@@ -190,8 +187,75 @@ body {
 .menu-main {
   width: 100%;
   height: 64px;
-  background-color: pink;
+  /* background-color: pink; */
 }
+.menu-main ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 64px;
+}
+.menu-main ul li {
+  list-style: none;
+  padding: 20px 25px;
+  position: relative;  /* ==== */
+}
+.menu-main ul li a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #111;
+  font-weight: bold;
+}
+.menu-main ul li a i {
+  font-size: 12px;
+}
+.menu-main ul .active a {
+  color: #cf3424;
+}
+
+/* submenu c1 */
+.submenu-c1 {
+  position: absolute; /* xxxx */
+  top: 100%;
+  z-index: 999999999;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+.menu-main .submenu-c1 {
+  /* display: block; */
+  display: none;
+  height: auto;
+  width: 200px;
+}
+.menu-main .submenu-c1 li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative; /* #### */
+}
+
+.menu-main ul li:hover .submenu-c1 {
+  display: block;
+}
+
+
+/* submenu c2 */
+.menu-main .submenu-c2 {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  background-color: #fff;
+  /* display: block; */
+  display: none;
+  height: auto;
+  width: 200px;
+}
+.menu-main .submenu-c1 li:hover .submenu-c2 {
+  display: block;
+}
+
+
+
 
 
 /* Banner */
@@ -222,13 +286,38 @@ body {
 
 
 
+.footer {
+  width: 100%;
+  height: 400px;
+  background-color: #000;
+}
 
+.icon-mobile {
+  display: none;
+}
 
+/* -> code phia tren danh cho man hinh lon -> TV, May chieu, PC, DESKTOP MAN HINH LON */
 
+/* Responsive - labtop */
+@media screen and (max-width: 1140px){
 
+}
 
+/* Responsive - tablet */
+@media screen and (max-width: 768px){
+  .icon-mobile {
+    display: block;
+  }
+  .search-main, .info-user .book-map {
+    display: none;
+  }
+  .header-top-wrap {
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 
-/* 
-row: Hang
-column: Cot
-*/
+/* Responsive - mobile */
+@media screen and (max-width: 420px){
+
+}
