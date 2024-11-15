@@ -1,0 +1,127 @@
+/* Reset Browser */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Loading */
+.spinner {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  border-radius: 50%;
+  border: 10px solid orange;
+  border-right-color: transparent;
+  border-left-color: transparent;
+
+  /* 
+   Su dung animation loading
+   -> animation-name: loading; => Ten animation
+   -> animation-duration: 1s; => Thoi gian animation chay
+   -> animation-delay: 2s; => Sau thoi gian bao thi animation chay.
+   -> animation-iteration-count: infinite; => So vong animation chay
+   -> animation-direction: normal; => Huong chuyen dong
+   -> animation-timing-function: linear; => Toc do chuyen dong
+   -> animation-fill-mode: none; => Trang thai cuoi cung chua chuyen dong
+   */
+  animation: loading .5s infinite linear;
+}
+
+
+/* 
+  Khai bao animation loading
+  from => Tu dau
+  to => den dau  
+*/
+@keyframes loading {
+  /* from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(45deg);
+  } */
+
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    background-color: pink;
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+/* Phone ring */
+.phone-ring {
+  border: none;
+  background-color: red;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 30px;
+  color: #fff;
+  font-weight: bold;
+
+  /* Su dung animation */
+  -webkit-animation: vibrate-1 0.3s linear infinite both;
+  animation: vibrate-1 0.3s linear infinite both;
+
+}
+
+
+/* Khai bao animation phone ring */
+ @-webkit-keyframes vibrate-1 {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+@keyframes vibrate-1 {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
